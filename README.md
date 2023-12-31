@@ -12,7 +12,7 @@ _The following datasets are generated with reference to "[Continuous-Time mmWave
    3. Generate the millimeter wave channel using *DeepMIMO_Dataset_Generator.m*.
    4. Generate User trajectory at the normalized prediction instant $\tau$ with four settings.
       - *generator_fixed_velocity.m*: Generate training, validation, and testing datasets with $v_k=5, 10, 15, 20, 25, 30$ respectively.
-      - *generator_constant_velocity.m*: Generate training and validation datasets, where $v_k~Uniform(0,30)$ and each UE $k$ moves within its respective activity range.
+      - *generator_constant_velocity.m*: Generate training and validation datasets, where $v_k\~Uniform(0,30)$ and each UE $k$ moves within its respective activity range.
       - *generator_random_velocity.m*: Generate training and validation datasets, where each UE $k$ moves randomly within its respective activity range with an average velocity $\overline{v_k}=(k \mod 6)*5+5$.
       - *generator_testing_dataset.m*: Generate a testing dataset for testing models trained with 'constant_velocity_dataset' and 'random_velocity_dataset', where the UE moves at random speeds throughout the full activity range.
       - *generator_retraining_dataset.m*: Generate datasets for the re-training method proposed in the paper.
