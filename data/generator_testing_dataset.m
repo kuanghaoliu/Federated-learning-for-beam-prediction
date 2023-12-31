@@ -21,7 +21,7 @@ row_index = [min_row : max_row];
 MM_ch = zeros(length(row_index), 181, 64);
 count = 1;
 for i = row_index
-    MM_file = ['DeepMIMOv2/MM_dataset_1/MM_DeepMIMO_dataset_' num2str(i) '_row.mat'];
+    MM_file = ['DeepMIMO/MM_dataset_1/MM_DeepMIMO_dataset_' num2str(i) '_row.mat'];
     load(MM_file);
     % beam training results
     MM_ch(count, :, :) = squeeze(MM_channel(1, :, :)) * candidate_narrow_beam;
