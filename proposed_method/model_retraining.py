@@ -92,10 +92,10 @@ def load_data(path):
 
 
 for R in [1.0, 2.0, 3.0, 4.0, 5.0, 6.0]:
-    x, y, bp_train = load_data('/media/ray/新增磁碟區/FL_dataset/mix_1024.mat')
+    x, y, bp_train = load_data('file_path')
     model = Model(timespans=Q+1, pred_points=m)
     model.build((32, Q+1, 64, 2))
-    model.load_weights('/media/ray/新增磁碟區/model_round/model_rand'+str(R)+'/')
+    model.load_weights('file_path')
 
     BL_out = []
     acc_test = []
