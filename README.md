@@ -20,7 +20,7 @@ _The following datasets are generated with reference to "[Continuous-Time mmWave
 # Proposed method
 See folder *proposed_method*
 
-This is the case where beam tracking (using a small number of probing beams) is performed every $T$ seconds, where $T=100$ ms by default. Each trajectory lasts for 1 second.
+Beam prediction is performed using the federated learning method, in which the number of UEs participating in the training is 36 ($K=36$). The prediction is based on the results of the previous nine beam training signals ($Q=9$).
 - BeamPredNet.py: neural network architecture for BeamPredNet.
 - fl_training.py: the main program for training BeamPredNet using federated learning (the main methods proposed in the paper).
 - model_retraining.py: the program for re-training the FL-trained model locally.
