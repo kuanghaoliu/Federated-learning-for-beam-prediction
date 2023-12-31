@@ -33,9 +33,9 @@ patience = [0]
 Q_array = list(range(0, (Q+2)*10, 10))
 print(Q_array)
 
-path_train = './dataset/dataset_rand/train/'
-path_valid = './dataset/dataset_rand/valid/'
-test = './dataset/dataset_rand/test/dataset_v_1.mat'
+path_train = 'file_path'
+path_valid = 'file_path'
+test = 'file_path'
 data = sio.loadmat(test)
 data_test = data['MM_data']  # beam training received signal
 data_test = data_test[:, :, 0: total: (m + 1), :]
